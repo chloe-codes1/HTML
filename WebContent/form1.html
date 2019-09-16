@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>Form Test</title>
+</head>
+<body>
+
+<!-- #하면 지금 현재 page 호출됨 -->
+<form action="#" method="get">
+	<fieldset>
+	<legend> 의견 올리기 </legend>
+
+	<!-- block속성인 p tag 사용 -->
+	<p>
+	<label for="name">작 성 자</label>
+	<input type="text" id="name" name="name" value="작성자">
+	</p>
+	<p>
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email" value="email" required>
+	</p>
+	<p>
+	<label for="date">등록 날짜</label>
+	<input type="date" id="date" name="date" value="date" required>
+	</p>
+	<p>
+	<label for="contents">내 용</label>
+	<textarea name="contents" id="contents" cols="60" rows="10"></textarea>
+	</p>
+	<p>
+	<label for="loc">지 역 선 택</label>
+	<select name="loc" id="loc">
+		<option value="서울"> 서울 </option>
+		<option value="대전"> 대전 </option>
+		<option value="대구"> 대구 </option>
+		<option value="부산"> 부산 </option>
+		<option value="수원"> 수원 </option>
+		<option value="주현이네"> 주현이네 </option>
+	</select>
+	</p>
+	<p>
+		<span>취 미 : </span> 
+		<label>여행 <input type="checkbox" name="hobby" value="여행"> </label>	
+		<label>독서 <input type="checkbox" name="hobby" value="독서"> </label>	
+		<label>수영 <input type="checkbox" name="hobby" value="수영"> </label>	
+		<label>등산 <input type="checkbox" name="hobby" value="등산"> </label>	
+	</p>
+	
+
+	<br>
+		<hr/>
+	<br>
+	<br>
+
+	<!-- block속성인 div tag 사용 -->
+	<div>
+	<label for="name">작 성 자</label>
+	<input type="text" id="name" name="name" value="작성자">
+	</div>
+	<div>
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email" value="email" required>
+	</div>
+	<div>
+	<label for="date">등록 날짜</label>
+	<input type="date" id="date" name="date" value="등록 날짜" required>
+	</div>
+	<div>
+	<label for="contents">내 용</label>
+	<textarea name="contents" id="contents" cols="60" rows="10"></textarea>
+	</div>
+	<div>
+	<label for="loc">지 역 선 택</label>
+	<select name="loc" id="loc">
+		<option value="서울"> 서울 </option>
+		<option value="대전"> 대전 </option>
+		<option value="대구"> 대구 </option>
+		<option value="부산"> 부산 </option>
+		<option value="수원"> 수원 </option>
+		<option value="주현이네"> 주현이네 </option>
+	</select>
+	</div>
+	<div>
+		<span>취 미 : </span> 
+		<label>여행 <input type="checkbox" name="hobby" value="여행"> </label>	
+		<label>독서 <input type="checkbox" name="hobby" value="독서"> </label>	
+		<label>수영 <input type="checkbox" name="hobby" value="수영"> </label>	
+		<label>등산 <input type="checkbox" name="hobby" value="등산"> </label>	
+	</div>	
+	
+	<input type="hidden" id="h" name="h" value="hidden data">
+	<!-- hidden : 사용자에게는 보이지 않게 정보를 숨겨서 보내는 것 -->
+	
+	<br/><br/>
+	<input type="submit" value="올리기">   <!-- submit은 server로 보낸다는 뜻 -->
+	<input type="RESET">
+	
+</fieldset>
+</form>
+
+<!-- 요소에 content가 올 일이 없을 때 쓰는 tag들 -->
+<hr/><br/><hr/><br/>
+
+	<br><br>
+	<a href="./index.html">Home으로 돌아가기</a>
+
+
+</body>
+</html>

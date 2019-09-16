@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>Audio</title>
+</head>
+<body>
+
+	<h3>Audio 재생</h3>
+	<audio autoplay="autoplay" controls="controls">
+		<!--control은 재생&정지 버튼 -->
+
+		<source src="./audio/johan.mp3" type="audio/mp3">
+		<source src="./audio/johan.ogg" type="audio/ogg">
+		<source src="./audio/johan.wav" type="audio/wav">
+		<!-- firefox에서는 mp3 동작하지 않아서 ogg 추가 -->
+		브라우저가 음악 파일 형식을 지원하지 않습니다.
+
+
+	</audio>
+
+	<hr>
+
+	<h3>Video 재생</h3>
+	
+	<h4>Video 1</h4>
+
+	<video width="350" autoplay="autoplay" controls="controls">
+		<!--<source src="./video/movie.mp4" type="video/mp4">-->
+		<source src="http://media.w3.org/2010/05/bunny/movie.ogv" type="video/mp4">
+		브라우저가 파일 형식을 지원하지 않습니다.
+
+
+	</video>
+
+	<br><br>
+	
+	<h4>Video 1</h4>
+
+	<video width="640" height="480" controls="controls">
+		<source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+		<source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogv">
+		<p> Your user agent does not support HTML5. </p>
+		
+	</video>
+
+	<a href="./index.html">Home으로 돌아가기</a>
+
+
+</body>
+</html>

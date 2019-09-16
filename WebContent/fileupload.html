@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>File Upload</title>
+</head>
+<body>
+
+<h3>File Upload 양식</h3>
+
+	<!-- file upload 시 method는 반드시 post & enctype 지정 -->
+<form action="" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend>file upload</legend>
+		<p>
+			<label for="file">파일선택</label>
+			<input type="file" id="file" name="file" accept="image/jpg,image/gif,image/png">
+									<!-- accpet로 file의 확장자 type 제한하기 -->
+		</p>
+	</fieldset>
+
+	<p>
+		<input type="submit" value="파일 업로드">
+		<input type="reset">
+	</p>
+
+</form>
+
+<br/>
+<br/>
+<a href="index.html"> Home으로 돌아가기 </a>
+
+</body>
+</html>

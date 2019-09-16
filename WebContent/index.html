@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>김주현의 홈페이지</title>
+<link rel="stylesheet" href="/2_css/css/mycss.css">
+</head>
+<body>
+
+<h1>주현의 홈페이지</h1>
+
+
+<!-- 사이에는 link 제목을 달면 됨 -->
+<!-- 같은 위치에 있어서 따로 경로 입력 안함 -->
+
+<!-- ul은 unorder list -->
+
+<h3> link list </h3>
+<ul>
+
+	<li><a href="test01.html" target="_blank"> test01 </a></li>
+	<li><a href="img.html" target="iframe1"> img </a></li>
+	<li><a href="table.html" target="iframe1"> Table </a></li>
+	<li><a href="table2.html" target="iframe1"> Table2 </a></li>
+	<li><a href="http://daum.net" target="iframe2"> 다음 </a></li>
+	<li><a href="http://naver.com" target="iframe2"> 네이버 </a></li>
+	            <!-- 네이버는 target="iframe" 안됨!! 막아놓음.... -->
+	<li><a href="./login.html"> 로그인 </a></li>
+	<li><a href="http://localhost:8000/5_ajax/users/users.html"> 회원가입 </a></li>
+	
+	<!-- 바로 로그인 & 가입 시키기 -->
+	<li><a href="./login.jsp?id=admin&pw=0000"> Log-In </a></li>
+	<li><a href="./adduser.jsp?ID=java&PW=0000&Name=김자바&Role=user"> Join </a></li>
+	
+	
+	<li><a href="./form1.html">제안서 올리기</a></li>
+	<li><a href="./fileupload.html">파일 올리기</a></li>
+	<li><a href="./audio.html">Audio & Video</a></li>
+	<li><a href="./p95_regex.html">정규표현식</a></li>
+	<li><a href="/2_css/Test01.html">CSS</a></li>
+	
+	
+	
+	
+</ul>
+
+<iframe name="iframe1" width = "800px" height="400px"> </iframe>
+<iframe name="iframe2" width = "800px" height="400px" sandbox="sandbox"> </iframe>
+                <!-- iframe이 보안상 취약해서 sandbox설정으로 javascript가 동작하는 것들을 막아놓음 -->
+
+<iframe name="iframe1" width = "800px" height="400px" src="https://www.youtube.com/watch?v=Yu4X_Uqrtrs"> </iframe>
+				<!-- src에 youtube 주소 해봤는데 안됨 -->
+
+
+</body>
+</html>

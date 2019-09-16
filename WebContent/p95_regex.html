@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>regex</title>
+</head>
+<body>
+
+<h3>정규 표현식</h3>
+
+<form action="" method="get">
+
+	<fieldset>
+	
+		<legend>!!!</legend>
+	
+			<div>
+				<label for="id">ID</label>
+				<input type="text" id="id" name="id" placeholder="아이디 입력" 
+				       required="required" pattern="[a-zA-Z].+[0-9]">
+				       						<!-- .: 영문자가 여러개 와도 되는데 맨 뒤에 숫자가 한개 와야지만 submit 가능 -->
+			</div>
+	
+	</fieldset>
+
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+
+</form>
+
+<hr>
+<form action="" method="get">
+
+	<fieldset>
+	
+		<legend>!!!</legend>
+	
+			<div>
+				<label for="id">ID</label>
+				<input type="text" id="id" name="id" placeholder="아이디 입력" 
+				       required="required" pattern="[a-zA-Z].+\d{2}">
+				       			<!-- 영문자 뒤에 같은 숫자가 2개 이상 와야함 -->
+			</div>
+	
+	</fieldset>
+
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+
+</form>
+
+<hr>
+<form action="" method="get">
+
+	<fieldset>
+	
+		<legend>!!!</legend>
+	
+			<div>
+				<label for="id">ID</label>
+				<input type="text" id="id" name="id" placeholder="아이디 입력" 
+				       required="required" pattern="\w{6,12}"
+				       title="ID는 영문자/숫자를 혼합하여  6~12글자 사이로 입력하세요">
+				       				<!-- 영문자/소문자 혼합해서 6글자~12글자 사이 허용 -->
+			</div>
+	
+	</fieldset>
+
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+
+</form>
+</body>
+</html>

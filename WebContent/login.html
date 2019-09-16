@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<title>Log-In</title>
+</head>
+<body>
+
+<h2> &#128541; Log-In &#128548;</h2>
+
+<form action="login.jsp" method="get">
+<!-- action에는  서버의 데이터가 옴-->
+<!-- method에는 서버의 데이터를 옮기는 방식이 옴 -->
+
+
+	<table border="1"> 
+		<tbody>
+			<tr>
+				<td> <label for="id"> ID </label></td>
+				<td> <input type="text" id="id" name="id" value=""/>  </td>
+			</tr>
+			<tr>
+				<td> <label for="pw"> PW </label></td>
+				<td> <input type="password" id="pw" name="pw" value=""/>  </td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="login">  <!--login 버튼을 누르면 위에 form action으로 가게 됨 => form의 action page로 전송-->
+					<input type="reset" value="cancel">
+					<a href="http://localhost:8000/5_ajax/users/users.html"> 회원가입 </a>
+					
+					</td>
+			</tr>
+		
+		</tbody>
+	
+	</table>
+	<br>
+	
+<a href="index.html"> Home으로 돌아가기 </a>
+
+</form>
+
+
+</body>
+</html>
